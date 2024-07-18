@@ -1,0 +1,22 @@
+{
+  "name": "quark-core-test",
+  "version": "0.0.0",
+  "type": "module",
+  "browserslist": "chrome >= 53, edge >= 79, firefox >= 63, opera >= 40, safari >= 10.1, ChromeAndroid >= 53,  FirefoxAndroid >= 63, ios_saf >= 10.3, Samsung >= 6.0",
+  "scripts": {
+    "test": "web-test-runner test/**/*.test.ts --node-resolve",
+    "test:watch": "pnpm run test --watch"
+  },
+  "dependencies": {
+    "quarkc": "^2.1.3"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^14.18.52",
+    "@web/dev-server-esbuild": "^1.0.2",
+    "@web/test-runner": "^0.18.1",
+    "@web/test-runner-puppeteer": "^0.16.0",
+    "typescript": "^5.4.5"
+  }
+}
