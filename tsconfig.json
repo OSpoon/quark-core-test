@@ -20,11 +20,25 @@
     "declarationDir": "./lib",
     "declaration": true /* 生成相关的 '.d.ts' 文件。 */,
     "emitDeclarationOnly": true /* 只生成声明文件，不生成 js 文件*/,
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "test/**/*.ts", "test/**/*.tsx", "rollup.config.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    "rollup.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

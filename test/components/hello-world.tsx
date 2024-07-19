@@ -2,6 +2,7 @@ import {
   QuarkElement,
   customElement,
 } from "quarkc"
+import style from "./style.css"
 
 const tag = 'hello-world';
 
@@ -11,7 +12,7 @@ declare global {
   }
 }
 
-@customElement({ tag, style: '.test { color: rgb(136, 170, 255); font-size: 24px; }' })
+@customElement({ tag, style })
 class HelloWorld extends QuarkElement {
   render() {
     return <div className="test">hello, world!</div>;

@@ -4,7 +4,7 @@
   "type": "module",
   "browserslist": "chrome >= 53, edge >= 79, firefox >= 63, opera >= 40, safari >= 10.1, ChromeAndroid >= 53,  FirefoxAndroid >= 63, ios_saf >= 10.3, Samsung >= 6.0",
   "scripts": {
-    "test": "web-test-runner test/**/*.test.ts --node-resolve",
+    "test": "web-test-runner test/**/*.test.ts --node-resolve --puppeteer",
     "test:watch": "pnpm run test --watch"
   },
   "dependencies": {
@@ -12,11 +12,15 @@
   },
   "devDependencies": {
     "@open-wc/testing": "^4.0.0",
+    "@rollup/plugin-replace": "^5.0.7",
     "@types/mocha": "^10.0.6",
     "@types/node": "^14.18.52",
     "@web/dev-server-esbuild": "^1.0.2",
+    "@web/dev-server-rollup": "^0.6.4",
     "@web/test-runner": "^0.18.1",
     "@web/test-runner-puppeteer": "^0.16.0",
+    "less": "^4.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.4.5"
   }
 }
